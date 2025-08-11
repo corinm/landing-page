@@ -4,23 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>corin.sh</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-  
-<style>
-    html {
+
+  <style>
+    html, body {
       height: 100%;
+      margin: 0;
     }
     body {
-      height: 100%;
-      background: linear-gradient(45deg, #008080 0%, #005959 50%, #004c4c 100%);
-
-      font-family: Inconsolata, monospace;
-      text-align: center;
+      background: linear-gradient(135deg, #008080 0%, #005959 50%, #004c4c 100%);
+      font-family: 'Inconsolata', monospace;
       color: #b2d8d8;
-      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    pre {
+      font-size: clamp(12px, 2vw, 18px);
+      white-space: pre;
+      line-height: 1.2;
+      text-shadow: 0 0 4px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(24px, 4vw, 48px);
+      margin: 0;
+      text-shadow: 0 0 5px rgba(178,216,216,0.8), 0 0 15px rgba(0,255,255,0.3);
+      letter-spacing: 2px;
+    }
+    /* Optional: slight scanline overlay for retro feel */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.03),
+        rgba(255,255,255,0.03) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      pointer-events: none;
     }
   </style>
 </head>
@@ -31,8 +61,6 @@
 (      -\.._,.;;'._ ,(   }        _`_-_,,    `, `,
  ``~~~~~~'   ((/'((((____/~~~~~~'(,(,___>      `~'
   </pre>
-  <!-- Source: https://ascii.co.uk/art/platypus -->
-
   <h1>corin.sh</h1>
 </body>
 </html>
